@@ -84,6 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "BITSAA Mentorship Program" },
       { property: "og:description", content: "Matching platform for BITSAA MS Mentorship" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://bitsaa-amp-ms-26-matcher.vercel.app/og-image.png" },
     ],
     links: [
       {
