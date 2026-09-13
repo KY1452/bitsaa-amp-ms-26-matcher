@@ -1,0 +1,31 @@
+ALTER TABLE public.mentors
+  ADD COLUMN IF NOT EXISTS linkedin text,
+  ADD COLUMN IF NOT EXISTS bits_id text,
+  ADD COLUMN IF NOT EXISTS bits_degree text,
+  ADD COLUMN IF NOT EXISTS city text,
+  ADD COLUMN IF NOT EXISTS state text,
+  ADD COLUMN IF NOT EXISTS grad_field text,
+  ADD COLUMN IF NOT EXISTS employment_status text,
+  ADD COLUMN IF NOT EXISTS years_experience numeric(4,1),
+  ADD COLUMN IF NOT EXISTS mentorship_type text,
+  ADD COLUMN IF NOT EXISTS hours_long_term numeric(4,1),
+  ADD COLUMN IF NOT EXISTS hours_reviews numeric(4,1),
+  ADD COLUMN IF NOT EXISTS previous_employers text;
+
+ALTER TABLE public.mentees
+  ADD COLUMN IF NOT EXISTS linkedin text,
+  ADD COLUMN IF NOT EXISTS bits_id text,
+  ADD COLUMN IF NOT EXISTS bits_degree text,
+  ADD COLUMN IF NOT EXISTS city text,
+  ADD COLUMN IF NOT EXISTS state text,
+  ADD COLUMN IF NOT EXISTS company text,
+  ADD COLUMN IF NOT EXISTS job_title text,
+  ADD COLUMN IF NOT EXISTS employment_status text,
+  ADD COLUMN IF NOT EXISTS years_experience numeric(4,1),
+  ADD COLUMN IF NOT EXISTS guidance_needed text,
+  ADD COLUMN IF NOT EXISTS commitment_hours numeric(5,1),
+  ADD COLUMN IF NOT EXISTS test_scores text,
+  ADD COLUMN IF NOT EXISTS background text,
+  ADD COLUMN IF NOT EXISTS goals text,
+  ADD COLUMN IF NOT EXISTS expectations text,
+  ADD COLUMN IF NOT EXISTS unmatched_reason text;
